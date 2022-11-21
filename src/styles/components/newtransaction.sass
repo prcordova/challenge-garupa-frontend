@@ -1,0 +1,58 @@
+@use '../variables'
+@use '../mixins'
+
+.transaction-form
+    display: flex
+    margin: 0 auto
+    width: 50%
+    height: 50%
+    flex-direction: column
+    justify-content: center
+
+    select,input
+        border-radius: 4px
+        height: 2.4rem
+        padding: .5rem
+        margin-top: .6rem
+        margin-bottom: 1.4rem
+        border: 1px solid #949393
+        color: variables.$input-text
+        display: flex
+        justify-content: left
+
+    button
+        background-color: variables.$bg-button
+        color: variables.$text-color-secondary
+        padding: .7rem
+        border-radius: 8px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        margin-bottom: 2rem
+    hr
+        margin-bottom: 3rem
+
+.refres-btn-container
+    width: 50%
+    margin: 0 auto
+    margin-top: .4rem
+    padding: .4rem
+    display: flex
+    text-align: right
+    justify-content: flex-end
+
+    button
+        padding: .3rem
+        border-radius: 8px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+
+        img
+            background: transparent
+
+@media screen and (max-width: 600px)
+    .transaction-form
+        width: 90%

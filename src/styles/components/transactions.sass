@@ -1,0 +1,61 @@
+@use '../variables'
+@use '../mixins'
+
+.transactions-container
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+h1
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 1.4rem
+    margin-bottom: 2rem
+
+.transactions-content
+    width: 50%
+
+    align-items: center
+
+@media screen and (max-width: 600px)
+    .transactions-content
+        width: 90%
+
+.table-head td
+    width: 100%
+    display: flex
+    font-weight: bold
+    justify-content: center
+
+.total-table td
+    border-top: 1px solid #635f5f
+
+.table-body td:last-child
+    display: flex
+    justify-content: flex-end
+    span
+        margin-right: .5rem
+
+.transactions-content  tr
+    width: 100%
+    display: flex
+    justify-content: center
+    margin: 0 auto
+    border-bottom: 1px solid #635f5f
+    margin-top: .12rem
+    line-height: 1.5rem
+
+.transactions-content  td
+    width: 60%
+    padding: 0 .4rem
+
+.lucro 
+    width: 50%
+    margin: 0 auto
+    margin-top: .4rem
+    padding: .4rem
+    display: flex
+    text-align: right
+    justify-content: flex-end
